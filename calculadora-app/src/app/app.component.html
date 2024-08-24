@@ -1,0 +1,14 @@
+
+<h1>Calculadora</h1>
+
+<app-number-input title="Valor 1" (valueChange)="handleValueChange($event, 1)"></app-number-input>
+<app-number-input title="Valor 2" (valueChange)="handleValueChange($event, 2)"></app-number-input>
+
+<h3>Resultado: {{result}}</h3>
+
+<app-button character="+" operation="sum"></app-button>
+<app-button character="-" operation="sub"></app-button>
+<app-button character="*" operation="mult"></app-button>
+<app-button character="/" operation="div"></app-button>
+<app-button character="^" operation="exp"></app-button>
+<app-button character="CE"operation="cl"></app-button>
